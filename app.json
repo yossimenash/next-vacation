@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "NextVacation",
-    "slug": "NextVacation",
+    "name": "next-vacation",
+    "slug": "next-vacation",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -12,14 +12,6 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "plugins": [
-      [
-        "react-native-auth0",
-        {
-          "domain": "dev-sqmjxto5b6hjzu5u.us.auth0.com"
-        }
-      ]
-    ],
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -27,15 +19,13 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.nextVacation.app"
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "package": "com.nextVacation.app"
+      }
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
