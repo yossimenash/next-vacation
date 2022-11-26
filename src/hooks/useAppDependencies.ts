@@ -1,15 +1,15 @@
 import d from "debug";
 import { useEffect, useState } from "react";
-import { RootStore } from "./store";
+import { RootStore } from "../store";
 
 const NAMESPACE = "app-dependencies";
 const debug = d(NAMESPACE);
 
-export interface AppDependencies {
+export interface UseAppDependencies {
   store: RootStore;
 }
 
-const createDependencies = async (): Promise<AppDependencies> => {
+const createDependencies = async (): Promise<UseAppDependencies> => {
   debug("Creating app dependencies");
 
   const store = new RootStore();
@@ -21,7 +21,7 @@ const createDependencies = async (): Promise<AppDependencies> => {
 };
 
 export const useAppDependencies = () => {
-  const [dependencies, setDependencies] = useState<AppDependencies | undefined>(
+  const [dependencies, setDependencies] = useState<UseAppDependencies | undefined>(
     undefined
   );
 
